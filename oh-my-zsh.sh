@@ -8,9 +8,10 @@ if [[ -z "$ZSH_CACHE_DIR" ]]; then
 fi
 
 # Check for updates on initial load...
-if [ "$DISABLE_AUTO_UPDATE" != "true" ]; then
-  source $ZSH/tools/check_for_upgrade.sh
-fi
+# IMPORTANT: Disabled because of failure to install on Docker.
+# if [ "$DISABLE_AUTO_UPDATE" != "true" ]; then
+#   source $ZSH/tools/check_for_upgrade.sh
+# fi
 
 # Initializes Oh My Zsh
 
